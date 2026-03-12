@@ -1,7 +1,40 @@
-.env
-logs/
-.venv/
-.idea/
+# Python
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+
+# OS
 .DS_Store
-*.pyc
+
+# Logs
+logs/
+*.log
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Alembic cache
+alembic/versions/__pycache__/
+
+# Build
+build/
+dist/
+*.egg-info/
