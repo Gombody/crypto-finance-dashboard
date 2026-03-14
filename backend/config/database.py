@@ -14,4 +14,4 @@ def get_database_url() -> str:
         port=settings.DB_PORT,
         database=settings.DB_NAME,
     )
-    return str(url)
+    return url.render_as_string(hide_password=False)
